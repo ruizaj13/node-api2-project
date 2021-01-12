@@ -1,5 +1,5 @@
 const knex = require('knex');
-const knexConfig = require('../knexfile.js');
+const knexConfig = require('../../knexfile');
 const db = knex(knexConfig.development);
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
   remove
 };
 
-function find() {
+  function find() {
     return db('posts');
   }
   
